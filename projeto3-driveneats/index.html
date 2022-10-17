@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Driven Eats</title>
+  </head>
+  <body>
+    <div class="topo">
+      <div class="titulo_topo">
+        DrivenEats
+      </div>
+      <div class="subtitulo_topo">
+        <p>Sua comida em 6 minutos</p>
+      </div>
+    </div>
+
+    <!--<div class="interno"></div>-->
+
+    <div class="frase_prato_principal">
+      Primeiro, seu prato
+    </div>
+
+    <div class="pedidos_prato_principal">
+      <!-- aqui vão as divs de cada prato principal-->
+      <div class="agrupa_prato_principal">
+        <div class="prato_principal" onclick="coloca_borda_verde_prato(this)">
+          <img src="./imagens/frango_yin_yang 1.png" />
+          <div class="nome_item">
+            Frango Yin Yang
+          </div>
+          <div class="descricao_item">
+            Um pouco de batata, um pouco de salada
+          </div>
+          <div class="preco_item">
+            R$ 14,90
+          </div>
+        </div>
+        <div class="prato_principal" onclick="coloca_borda_verde_prato(this)">
+          <img src="./imagens/foto_strogonoff.jpg" />
+          <div class="nome_item">
+            Strogonoff
+          </div>
+          <div class="descricao_item">
+            Acompanhado com arroz e batata palha
+          </div>
+          <div class="preco_item">
+            R$ 19,90
+          </div>
+        </div>
+        <div class="prato_principal" onclick="coloca_borda_verde_prato(this)">
+          <img src="./imagens/foto_feijoada.jpeg" />
+          <div class="nome_item">
+            Feijoada
+          </div>
+          <div class="descricao_item">
+            Acompanhada com arroz e farofa
+          </div>
+          <div class="preco_item">
+            R$ 16,90
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="frase_bebida">
+      Agora, sua bebida
+    </div>
+
+    <div class="pedidos_bebidas">
+      <!-- aqui vão as divs de cada bebida-->
+      <div class="agrupa_bebida">
+        <div class="prato_principal" onclick="coloca_borda_verde_bebida(this)">
+          <img src="./imagens/coquinha_gelada 1.png" />
+          <div class="nome_item">
+            Coquinha gelada
+          </div>
+          <div class="descricao_item">
+            Refrigerante mata, não peça ;)
+          </div>
+          <div class="preco_item">
+            R$ 5,90
+          </div>
+        </div>
+        <div class="prato_principal" onclick="coloca_borda_verde_bebida(this)">
+          <img src="./imagens/foto_agua.jpeg" />
+          <div class="nome_item">
+            Água mineral
+          </div>
+          <div class="descricao_item">
+            Beba água
+          </div>
+          <div class="preco_item">
+            R$ 2,90
+          </div>
+        </div>
+        <div class="prato_principal" onclick="coloca_borda_verde_bebida(this)">
+          <img src="./imagens/foto_suco.jpeg" />
+          <div class="nome_item">
+            Suco natural
+          </div>
+          <div class="descricao_item">
+            Diversos sabores de sucos diferentes
+          </div>
+          <div class="preco_item">
+            R$ 6,90
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="frase_sobremesa">
+      Por fim, sua sobremesa
+    </div>
+
+    <div class="pedidos_sobremesa">
+      <!-- aqui vão as divs de cada bebida-->
+      <div class="agrupa_sobremesa">
+        <div class="prato_principal" onclick="coloca_borda_verde_sobremesa(this)">
+          <img src="./imagens/pudim 1.png" />
+          <div class="nome_item">
+            Pudim
+          </div>
+          <div class="descricao_item">
+            Apenas pudim
+          </div>
+          <div class="preco_item">
+            R$ 7,90
+          </div>
+        </div>
+        <div class="prato_principal" onclick="coloca_borda_verde_sobremesa(this)">
+          <img src="./imagens/foto_brigadeiro.jpeg" />
+          <div class="nome_item">
+            Brigadeiro
+          </div>
+          <div class="descricao_item">
+            Unidade de um brigadeiro delicioso
+          </div>
+          <div class="preco_item">
+            R$ 1,90
+          </div>
+        </div>
+        <div class="prato_principal" onclick="coloca_borda_verde_sobremesa(this)">
+          <img src="./imagens/foto_jujuba.jpeg" />
+          <div class="nome_item">
+            Jujuba
+          </div>
+          <div class="descricao_item">
+            Um doce a mais para você
+          </div>
+          <div class="preco_item">
+            R$ 2,90
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="barra_pedido">
+      <div class="barra_pedido_interno" onclick = "chamawpp(this)">
+        <p class="texto_pedido">Selecione os 3 itens para fechar o pedido</p>
+      </div>
+    </div>
+  
+    <script src="script.js"></script>
+  </body>
+</html>
